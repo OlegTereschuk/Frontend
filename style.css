@@ -1,0 +1,220 @@
+.index-container {
+    margin: 0 auto;
+    width: 1920px;
+    box-sizing: border-box;
+}
+
+.header-container {
+    position: relative;
+    background-color: #EEE7A9;
+    background-image: url(images/TOP.jpg);
+    height: 1080px;
+    padding: 310px 100px 45px 180px;
+}
+
+.header-container p {
+    font: 32px "Arial Rounded MT Bold", "Open Sans", sans-serif;
+    color: #47A19B;
+}
+
+header .logo img {
+    position: absolute;
+    top: -28px;
+    left: 175px;
+}
+
+header .title-container {
+    width: 920px;
+    margin-bottom: 60px; 
+}
+
+header .title-container h1 {
+    font: 62px "Arial", "Open Sans", sans-serif;
+}
+
+header .register-container {
+    position: absolute;
+    left: 0;
+    background-color: #ffffff;
+    padding: 48px 80px 48px 190px;
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+    width: 625px;
+}
+
+header .register-container .date {
+    font: 28px "Arial", "Open Sans", sans-serif;
+    color: #FF8141;
+}
+
+header .register-container .register-button,
+main .register-button{
+    font: 28px "Arial", "Open Sans", sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #FF8141; 
+    border-radius: 35px;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    text-align: center;
+    margin-top: 14px;
+    width: 492px;
+}
+
+header .scroll-down {
+    position: absolute;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: 50px;
+    bottom: 46px;
+    color: #FDFEFE;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+    cursor: pointer;
+}
+
+header .scroll-down span {
+    font: 16px "Arial Rounded MT Bold", "Open Sans", sans-serif;
+    color: #ffffff;
+    margin-left: -34px;
+}
+
+.triangle {
+    position: relative;
+    width:0;
+    border-top:solid 35px #ffffff;
+    border-right:solid 25px transparent;
+    border-left:solid 25px transparent;
+    margin-top: 8px;
+}
+.triangle .empty {
+    position: absolute;
+    top:-31px;
+    left:-16px;
+    width:0;
+    border-top:solid 23px #69CAC3;
+    border-right:solid 16px transparent;
+    border-left:solid 16px transparent;
+}
+
+main .main-container {
+    display: flex;
+}
+
+main .left {
+    position: relative;
+    width: 1085px;
+    min-height: 915px;
+    background-image: url(images/FRAME-copy.jpg);
+    background-position: center;
+}
+
+main .left::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+}
+
+main .left:hover::before {
+    content: '';
+    display: none;
+}
+
+main .left .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -90px;
+    margin-left: -90px
+}
+
+main .left .play {
+    position: relative;
+    cursor: pointer;
+    z-index: 3;
+    display: block;
+    height: 180px;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.6)
+    /*background-color: black*/;
+    border-radius: 50%;
+}
+
+main .left .play::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: 25px solid transparent; 
+    border-left: 40px solid #ffffff;
+    top: 50%;
+    left: 50%;
+    margin-top: -22px;
+    margin-left: -12px;
+}
+
+main .left .arrow {
+    position: absolute;
+    background: url(images/arrow.png);
+    width: 136px;
+    height: 123px;
+    top: 56%;
+    left: 54%;
+    z-index: 3;
+}
+
+main .left .arrow-container p {
+    position: absolute;
+    bottom: 15%;
+    right: 19%;
+    font: 40px/36px "Freestyle Script", "Open Sans", sans-serif;
+    transform: rotate(15deg);
+    z-index: 3;
+}
+
+main .right {
+    width: 835px;
+    margin: 120px 70px 70px 130px;
+}
+
+main .right h2 {
+    font: bold 42px "Visby CF", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #3A4A62;
+    margin: 0;
+    padding: 0;
+}
+
+main .right li {
+    position: relative;
+    list-style: url(images/list-arrow.png);
+    font: 22px/30px "Visby CF", "Myriad Pro", sans-serif;
+    color: #605F5F;
+    margin-bottom: 15px;
+}
+
+main .right li:last-child {
+    list-style: url(images/heart.png);
+    font: 200 22px "Myriad Pro", "Arial", sans-serif;
+    margin-top: 35px;
+    margin-bottom: 80px;
+}
+
+.footer-container {
+    background-color: #273D50;
+    padding: 70px 100px 60px 100px; 
+}
+
+.footer-title {
+    text-align: center;
+    margin: 0 auto;
+    color: #FEFDFD;
+    font: bold 55px 'Open Sans', Arial, sans-serif;
+}
+
+
